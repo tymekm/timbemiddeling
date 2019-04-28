@@ -1,0 +1,23 @@
+#contact-container {
+}
+
+form {
+    display: flex;
+    flex-flow: column;
+}
+
+form * {
+    margin-bottom: 1em;
+}
+
+form #name-field {
+    max-width: 200px;
+}
+
+form #email-field {
+    max-width: 200px;
+}
+
+form #submit-button {
+    max-width: 200px;
+}
