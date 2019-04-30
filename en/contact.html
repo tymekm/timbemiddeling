@@ -8,6 +8,9 @@
 <script src="../lib/jquery.js"></script> 
 <script> 
     $(function(){
+	$("lang").load("lang.html");
+    });
+    $(function(){
       $("nav").load("navbar.html"); 
     });
     $(function(){
@@ -16,6 +19,7 @@
 </script> 
 </head>
 <body>
+<lang></lang>
 <nav></nav>
 <div id="img-container">
     <img id="title-img" src="../images/construction.jpg" 
@@ -39,7 +43,7 @@
 		href="https://www.facebook.com/Tim-Bemiddeling-2174363422876472/" >Facebook</a>
 	</div>
     </div>
-    <form id="form" method="post" action="mail.php">
+    <form id="form" method="post" action="php mail.php">
 	<h3>Contact formulier</h3>
 	<input id="name-field" type="text" name="name" placeholder="Enter Name">
 	<input id="email-field" type="text" name="email" placeholder="Enter E-Mail">

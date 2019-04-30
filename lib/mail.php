@@ -1,5 +1,9 @@
 <?php
-require("/home/tymek/Documents/webdesign/timbemiddeling/PHPMailer_5.2.0/class.phpmailer.php");
+require("PHPMailer_5.2.0/class.phpmailer.php");
+
+$subject = $_REQUEST['name'];
+$email = $_REQUEST['email'];
+$message = $_REQUEST['message'];
 
 $mail = new PHPMailer();
 
@@ -8,19 +12,19 @@ $mail->Host = "mail.timbemiddeling.com";  // specify main and backup server
 $mail->Port       = 587; 
 $mail->SMTPAuth = true;     // turn on SMTP authentication
 $mail->SMTPSecure = "tls";
-$mail->Username = "info@timbemiddeling.com";  // SMTP username
-$mail->Password = "Pelnia1992"; // SMTP password
+$mail->Username = "sender@timbemiddeling.com";  // SMTP username
+$mail->Password = "test123"; // SMTP password
 
-$mail->From = "info@timbemiddeling.com";
-$mail->FromName = "Mailer";
-$mail->AddAddress("tymek.m@hotmail.com");                  // name is optional
+$mail->From = "sender@timbemiddeling.com";
+
+$mail->FromName = $named;
+$mail->AddAddress("info@timbemiddeling.com");                  // name is optional
 
 $mail->WordWrap = 50;                                 // set word wrap to 50 characters
 $mail->IsHTML(true);                                  // set email format to HTML
 
 $mail->Subject = "Here is the subject";
-$mail->Body    = "This is the HTML message body in bold!";
-$mail->AltBody = "This is the body in plain text for non-HTML mail clients";
+$mail->Body    = $message;
 
 if(!$mail->Send())
 {
