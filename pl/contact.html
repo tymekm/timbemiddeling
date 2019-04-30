@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<title>TIM bemiddeling</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/contact.css">
+<script src="../lib/jquery.js"></script> 
+<script> 
+    $(function(){
+      $("nav").load("navbar.html"); 
+    });
+    $(function(){
+      $("footer").load("footer.html"); 
+    });
+</script> 
+</head>
+<body>
+<nav></nav>
+<div id="img-container">
+    <img id="title-img" src="../images/construction.jpg" 
+	alt="Title image">
+</div>
+<main>
+    <h2>
+	Contact informatie
+    </h2>
+    <div id="contact-container">
+	<div id="about-data">
+	    <p> Secretaris Janssenstraat 3 </p>
+	    <p> 6624AC HEEREWAARDEN </p>
+	    <p> Kvk: 5555555 </p>
+	</div>
+
+	<div id="contact-data">
+	    <p>+31 614 134 284</p>
+	    <p>Timbemiddeling@gmail.com</p>
+	    <a target="_blank" rel="noopener noreferrer"
+		href="https://www.facebook.com/Tim-Bemiddeling-2174363422876472/" >Facebook</a>
+	</div>
+    </div>
+    <form id="form" method="post" action="../lib/mail.php">
+	<h3>Contact formulier</h3>
+	<input id="name-field" type="text" name="name" placeholder="Enter Name">
+	<input id="email-field" type="text" name="email" placeholder="Enter E-Mail">
+	<textarea id="message-field" rows="10" name="message" placeholder="Type Your Message"></textarea>
+	<input id="submit-button" type="submit" value="Verzend">
+    </form>
+</main>
+<footer></footer>
+</body>
+</html>

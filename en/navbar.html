@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TIM bemiddeling</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <script type="text/javascript">
+	function checkNav(){
+	    if (document.getElementById('toggle').checked) {
+		document.getElementById("links").style.display = "flex";
+		document.getElementsByTagName("nav").style.boxShadow = "none";
+	    }
+	    else{
+		document.getElementById("links").style.display = "none";
+	    }
+	}
+    </script>
+</head>
+
+<body>
+    <nav id="navbar"> 
+	<h3 id="test">TIM bemiddeling</h3>
+	<label for="toggle">&#9776;</label>
+	<input onclick="checkNav()" id="toggle" type="checkbox">
+	<div id="links">
+	    <a class="nav-link" onclick="hideNav()" 
+		href="./home.html">Home</a>
+	    <a class="nav-link" onclick="hideNav()" 
+		href="./about.html">Over ons</a>
+	    <a class="nav-link" onclick="hideNav()" 
+		href="./contact.html">Contact</a>
+	</div>
+    </nav>
+</body>
+</html>
