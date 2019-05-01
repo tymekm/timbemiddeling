@@ -1,6 +1,7 @@
 <?php
 require("PHPMailer_5.2.0/class.phpmailer.php");
 
+include '/home4/timbemid/etc/timbemiddeling.com/pass/sender-pass.php';
 $subject = $_REQUEST['name'];
 $email = $_REQUEST['email'];
 $message = $_REQUEST['message'];
@@ -13,7 +14,7 @@ $mail->Port       = 587;
 $mail->SMTPAuth = true;     // turn on SMTP authentication
 $mail->SMTPSecure = "tls";
 $mail->Username = "sender@timbemiddeling.com";  // SMTP username
-$mail->Password = "test123"; // SMTP password
+$mail->Password = $pass; // SMTP password
 
 $mail->From = "sender@timbemiddeling.com";
 
