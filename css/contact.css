@@ -18,6 +18,10 @@ form #email-field {
     max-width: 200px;
 }
 
+form #subject-field {
+    max-width: 200px;
+}
+
 form #submit-button {
     max-width: 200px;
 }
