@@ -25,21 +25,21 @@ form input, textarea  {
 }
 
 form #name-field {
-    max-width: 200px;
+    width: 200px;
 }
 
 form #email-field {
-    max-width: 200px;
+    width: 200px;
 }
 
 form #telnum-field {
-    max-width: 200px;
+    width: 200px;
 }
 
 form #subject-field {
-    max-width: 200px;
+    width: 200px;
 }
 
 form #submit-button {
-    max-width: 200px;
+    width: 200px;
 }
