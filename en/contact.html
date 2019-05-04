@@ -28,7 +28,7 @@
 <main>
     <div id="contact-container">
 	<h2>
-	    Contact informatie
+	    Contact information
 	</h2>
 	<div id="about-data">
 	    <p> Secretaris Janssenstraat 3 </p>
@@ -43,18 +43,18 @@
 		href="https://www.facebook.com/Tim-Bemiddeling-2174363422876472/" >Facebook</a>
 	</div>
     </div>
-    <h3>Contact formulier</h3>
+    <h3>Contact form</h3>
     <form id="form" method="post" action="../lib/mail.php">
 	<input id="name-field" type="text" name="name" 
-	    placeholder="Name">
+	    placeholder="Name" required>
 	<input id="email-field" type="text" name="email" 
-	    placeholder="E-Mail">
+	    placeholder="E-Mail" required>
 	<input id="telnum-field" type="text" name="telnum" 
 	    placeholder="Telephone number">
 	<input id="subject-field" type="text" name="subject" 
 	    placeholder="Subject">
 	<textarea id="message-field" rows="10" cols="20" name="message" 
-	    placeholder="Type Your Message"></textarea>
+	    placeholder="Type Your Message" required></textarea>
 	<input id="submit-button" type="submit" value="Verzend">
     </form>
 </main>
