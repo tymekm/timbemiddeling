@@ -1,25 +1,41 @@
+:root {
+    --nav-bg-color: aliceblue;
+    --nav-fg-color: black;
+    --link-hover-color: darkred;
+    --link-color: darkblue;
+    --footer-fg-color: aliceblue;
+    --footer-bg-color: #3d3939;
+    --input-bg-color: gainsboro;
+}
+
 body {
     margin:0;
     min-height:100vh;
-    background-color: #e6e9f0;
+    background-color: var(--nav-bg-color);
     display:flex;
     flex-flow:column;
     justify-content:space-between;
+    font-family: helvetica;
+    font-size: 1.2em;
 }
 
 main {
+    padding-top: calc(60px + 30vh);
     margin: 0 20vw;
 }
 
 #img-container {
+    position: absolute;
     width:100%;
     height:30vh;
+    top: 60px;
     overflow:hidden;
+    z-index: -1;
 }
 
 #title-img {
     width:100%;
-    margin-top:-22%;
+    margin-top:-25%;
 }
 
 @media only screen and (max-width: 850px){
@@ -27,3 +43,20 @@ main {
 	margin:0 10vw;
     }
 }
+
+a:hover {
+    text-decoration: underline; 
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
