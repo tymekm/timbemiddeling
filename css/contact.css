@@ -12,11 +12,19 @@ form * {
     margin-bottom: 1em;
 }
 
+form input, textarea  {
+    background-color: lightgrey;
+}
+
 form #name-field {
     max-width: 200px;
 }
 
 form #email-field {
+    max-width: 200px;
+}
+
+form #telnum-field {
     max-width: 200px;
 }
 

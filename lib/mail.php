@@ -4,6 +4,7 @@ require("PHPMailer_5.2.0/class.phpmailer.php");
 include '../../etc/timbemiddeling.com/pass/sender-pass.php';
 $name = $_REQUEST['name'];
 $email = $_REQUEST['email'];
+$telnum = $_REQUEST['telnum'];
 $subject = $_REQUEST['subject'];
 $message = $_REQUEST['message'];
 
@@ -23,7 +24,12 @@ $mail->From = $email;
 $mail->FromName = $name;
 $mail->AddAddress("info@timbemiddeling.com");
 $mail->Subject = $subject;
-$mail->Body = $message . '<br><br>Do not reply to this email';
+$mail->Body = 
+    'Imie: ' . $name . '<br>' .
+    'Email: ' . $email . '<br>' .
+    'Numer telefonu: ' . $telnum . '<br><br>' .
+    '<h3>' . $subject . '</h3><br>' .
+    $message;
 
 if(!$mail->Send())
 {
