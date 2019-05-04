@@ -21,7 +21,7 @@ footer p {
     margin:0 0 5px 0;
 }
 
-footer button {
+#contact-data a {
     height:30px;
     min-width:70%;
     display:flex;
@@ -35,12 +35,13 @@ footer button {
     text-decoration:none;
 }
 
-button:hover {
+#contact-data a:hover {
+    cursor: pointer;
     color:#3d3939;
     background-color:#beb9b5;
 }
 
-button img {
+#contact-data a img {
     height:25px;
     width:25px;
     margin:0;
