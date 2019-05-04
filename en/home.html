@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>TIM bemiddeling</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/main.css">
     <script src="../lib/jquery.js"></script> 
     <script> 
 	$(function(){
-	  $("lang").load("lang.html"); 
+	    $("global").load("global.html");
 	});
 	$(function(){
-	  $("nav").load("navbar.html"); 
+	    $("lang").load("lang.html");
 	});
 	$(function(){
-	  $("footer").load("footer.html"); 
+	    $("nav").load("navbar.html"); 
+	});
+	$(function(){
+	    $("footer").load("footer.html"); 
 	});
     </script> 
+    <global></global>
 </head>
 <body>
     <lang></lang>
@@ -38,3 +41,4 @@
     <footer></footer>
 </body>
 </html>
+

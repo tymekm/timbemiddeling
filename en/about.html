@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>TIM bemiddeling</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/main.css">
     <script src="../lib/jquery.js"></script> 
     <script> 
+	$(function(){
+	    $("global").load("global.html");
+	});
 	$(function(){
 	    $("lang").load("lang.html");
 	});
@@ -16,13 +18,14 @@
 	    $("footer").load("footer.html"); 
 	});
     </script> 
+    <global></global>
 </head>
 <body>
     <lang></lang>
     <nav></nav>
     <div id="img-container">
 	<img id="title-img" src="../images/construction.jpg" 
-	    alt="Construction site">
+	    alt="Contruction site">
     </div>
     <main>
 	<h2>

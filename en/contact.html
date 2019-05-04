@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>TIM bemiddeling</title>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="../css/main.css">
-<link rel="stylesheet" href="../css/contact.css">
-<script src="../lib/jquery.js"></script> 
-<script> 
-    $(function(){
-	$("lang").load("lang.html");
-    });
-    $(function(){
-      $("nav").load("navbar.html"); 
-    });
-    $(function(){
-      $("footer").load("footer.html"); 
-    });
-</script> 
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <script src="../lib/jquery.js"></script> 
+    <script> 
+	$(function(){
+	    $("global").load("global.html");
+	});
+	$(function(){
+	    $("lang").load("lang.html");
+	});
+	$(function(){
+	    $("nav").load("navbar.html"); 
+	});
+	$(function(){
+	    $("footer").load("footer.html"); 
+	});
+    </script> 
+    <global></global>
 </head>
 <body>
 <lang></lang>
@@ -28,7 +31,7 @@
 <main>
     <div id="contact-container">
 	<h2>
-	    Contact information
+	    Contact informatie
 	</h2>
 	<div id="about-data">
 	    <p> Secretaris Janssenstraat 3 </p>
@@ -43,17 +46,17 @@
 		href="https://www.facebook.com/Tim-Bemiddeling-2174363422876472/" >Facebook</a>
 	</div>
     </div>
-    <h3>Contact form</h3>
     <form id="form" method="post" action="../lib/mail.php">
+	<h3>Contact formulier</h3>
 	<input id="name-field" type="text" name="name" 
-	    placeholder="Name *" required>
+	    placeholder="Imię *" required>
 	<input id="email-field" type="text" name="email" 
 	    placeholder="Email *" required>
 	<input id="telnum-field" type="text" name="telnum" 
-	    placeholder="Telephone number">
+	    placeholder="Numer telefonu">
 	<input id="subject-field" type="text" name="subject" 
-	    placeholder="Subject">
-	<textarea id="message-field" rows="10" cols="20" name="message" 
+	    placeholder="Temat">
+	<textarea id="message-field" rows="10" cols="80" name="message" 
 	    placeholder="Type Your Message" required></textarea>
 	<input id="submit-button" type="submit" value="Verzend">
     </form>
